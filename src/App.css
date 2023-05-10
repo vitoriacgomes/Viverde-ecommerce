@@ -1,8 +1,9 @@
 /*---------------HEADER---------*/
 .header{
-  color: rgb(103, 103, 103);
+  color: rgb(0, 0, 0);
   font-weight: 600;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25)
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+  background-color: #088562;
 }
 .container {
   display: flex;
@@ -25,6 +26,7 @@ flex-direction: row;}
   font-size: 1rem;
   justify-content: center;
   margin-top: 10px;
+  color: white;
 }
 .navbar{
   font-weight: 500;
@@ -40,7 +42,7 @@ flex-direction: row;}
 .btn {
   display: inline-flex;
   align-items: center;
-  color: black;
+  color: white;
   background-color: #fd5e02;
   border: none;
   padding: 0.5rem 1rem;
@@ -58,7 +60,8 @@ flex-direction: row;}
 .home{
   width: 100%;
   height: 87vh;
-  background: url("./img/banner-2.png");
+  background-color: #088562;
+
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -78,3 +81,33 @@ flex-direction: row;}
 .img-home{
   margin-top: 6%;
 }
+.btn-home{
+  background-color: #06684c;
+}
+.btn-home:hover{
+  background-color: #043d2d;
+}
+.title-font{
+  font-size: 50px;
+  line-height: 80px;
+  font-weight: 800;
+}
+.title-p{
+  color: black;
+}
+.text-p{
+  color: black;
+}
+.title-img{
+  width: 80%;
+  margin-left: -2%;
+}
+@media (max-width: 768px){
+  .title-img{
+    margin-left: 10%;
+  }
+}
+  .img-home{
+    width: 500px;
+    height: 500px;
+  }
