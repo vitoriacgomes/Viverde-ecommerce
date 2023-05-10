@@ -4,7 +4,7 @@ import Header from './componentes/header';
 
 function App() {
   return (
-    <div className='text-gray-600 text-4xl'>
+    <div>
       <Header/>
     </div>
   );

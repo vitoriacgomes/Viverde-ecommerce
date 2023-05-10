@@ -1,23 +1,20 @@
 import React from 'react'
-import macalogo from "../../img/maça-logo.png"
+import logo from "../../img/LOGO.png"
 
 const Header = () => {
   return (
     <div>
-      <header className="text-gray-600 body-font">
-        <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-            <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-                <img src={macalogo} width={60}/>
-            <span class="viverde ml-3 text-xl">VIVERDE</span>
-            </a>
-            <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-                <a className="mr-5 hover:text-gray-900">Home</a>
-                <a className="mr-5 hover:text-gray-900">Catálogo</a>
-                <a className="mr-5 hover:text-gray-900">Carrinho</a>
-                <a className="mr-5 hover:text-gray-900">Contato</a>
+      <header className="header">
+        <div className="container">
+            <img className='logo-header' src={logo} width={150}/>
+            <nav className="nav md:ml-auto md:mr-auto">
+                <a className="navbar mr-5 hover:text--900 ">Home</a>
+                <a className="navbar mr-5 hover:text-900">Catálogo</a>
+                <a className="navbar mr-5 hover:text-900">Carrinho</a>
+                <a className="navbar mr-5 hover:text-900">Contato</a>
             </nav>
-            <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Botão
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+            <button className="btn"> Carrinho
+                <svg className='btn-1' fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                 </svg>
             </button>
