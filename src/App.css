@@ -28,6 +28,11 @@ flex-direction: row;}
   margin-top: 10px;
   color: white;
 }
+@media (max-width: 768px){
+  .nav{
+    margin-bottom: 4%;
+  }
+}
 .navbar{
   font-weight: 500;
 }
@@ -38,6 +43,11 @@ flex-direction: row;}
   margin-bottom: 10px;
   margin-left: 50px;
   margin-top: 10px;
+}
+@media (max-width: 768px){
+  .logo-header{
+    margin-left: -10%;
+  }
 }
 .btn {
   display: inline-flex;
@@ -54,7 +64,24 @@ flex-direction: row;}
   margin-top: 10px;
 }
 .btn:hover {
-  background-color: #E5E7EB;
+  background-color: #d64f01;
+}
+.btn-2{
+  display: inline-flex;
+  align-items: center;
+  color: rgba(4, 0, 0, 0.626);
+  background-color: rgb(235, 237, 237);
+  border: none;
+  padding: 0.5rem 1rem;
+  outline: none;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  margin-right: 50px;
+  margin-top: 10px;
+}
+.btn-2:hover {
+  background-color: rgb(208, 210, 210);
 }
 /*---------------HOME-----------*/
 .home{
@@ -87,7 +114,7 @@ flex-direction: row;}
 .btn-home:hover{
   background-color: #043d2d;
 }
-.title-font{
+.title-fonte{
   font-size: 50px;
   line-height: 80px;
   font-weight: 800;
@@ -104,10 +131,12 @@ flex-direction: row;}
 }
 @media (max-width: 768px){
   .title-img{
-    margin-left: 10%;
+    margin-left: 8%;
+    margin-top: 10%;
   }
 }
-  .img-home{
-    width: 500px;
-    height: 500px;
-  }
+.img-home{
+  width: 500px;
+  height: 500px;
+}
+/*---------------PRODUTOS-----------*/
