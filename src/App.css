@@ -41,7 +41,7 @@ flex-direction: row;}
   display: inline-flex;
   align-items: center;
   color: black;
-  background-color: #fd5e0296;
+  background-color: #fd5e02;
   border: none;
   padding: 0.5rem 1rem;
   outline: none;
@@ -53,4 +53,28 @@ flex-direction: row;}
 }
 .btn:hover {
   background-color: #E5E7EB;
+}
+/*---------------HOME-----------*/
+.home{
+  width: 100%;
+  height: 87vh;
+  background: url("./img/banner-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+@media (max-width: 768px){
+  .home{
+    height: 100%;
+  }
+}
+.section{
+  margin-left: 50px;
+  margin-right: 50px;
+  font-family: "body-font", sans-serif;
+  color: #4a5568;
+}
+.img-home{
+  margin-top: 6%;
 }
