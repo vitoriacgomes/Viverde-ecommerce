@@ -17,13 +17,13 @@ function App() {
 
   return (
     <div>
-      <Header/>
+      <Header onProdutosButtonClick={goToProdutos}/>
       {currentPage === 'home' ? (
         <Home onProdutosButtonClick={goToProdutos}/>
       ) : (
         <Produtos />
       )}
-      {currentPage === 'catalog' && (
+      {currentPage === 'produtos' && (
         <Hero onProdutosButtonClick={goToHomePage} />
       )}
     </div>

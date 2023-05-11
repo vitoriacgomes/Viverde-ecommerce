@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from "../../img/LOGO.png"
 
-const Header = () => {
+const Header = ({ onProdutosButtonClick }) => {
   return (
     <div>
       <header className="header">
@@ -9,7 +9,7 @@ const Header = () => {
             <img className='logo-header' src={logo} width={150}/>
             <nav className="nav md:ml-auto md:mr-auto">
                 <a className="navbar mr-5 hover:text--900 ">Home</a>
-                <a className="navbar mr-5 hover:text-900">Catálogo</a>
+                <button className="navbar mr-5 hover:text-900" onClick={onProdutosButtonClick}>Catálogo</button>
                 <a className="navbar mr-5 hover:text-900">Carrinho</a>
                 <a className="navbar mr-5 hover:text-900">Contato</a>
             </nav>
