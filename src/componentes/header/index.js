@@ -1,14 +1,14 @@
 import React from 'react'
 import logo from "../../img/LOGO.png"
 
-const Header = ({ onProdutosButtonClick }) => {
+const Header = ({ onProdutosButtonClick , onHomeButtonClick}) => {
   return (
     <div>
       <header className="header">
         <div className="container">
             <img className='logo-header' src={logo} width={150}/>
             <nav className="nav md:ml-auto md:mr-auto">
-                <a className="navbar mr-5 hover:text--900 ">Home</a>
+                <button className="navbar mr-5 hover:text--900 " onClick={onHomeButtonClick}>Home</button>
                 <button className="navbar mr-5 hover:text-900" onClick={onProdutosButtonClick}>Catálogo</button>
                 <a className="navbar mr-5 hover:text-900">Carrinho</a>
                 <a className="navbar mr-5 hover:text-900">Contato</a>
