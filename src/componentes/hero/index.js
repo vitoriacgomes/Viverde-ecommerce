@@ -2,7 +2,7 @@ import React from 'react'
 import art1 from "../../img/vegetais-art.png"
 import logo from "../../img/logo-branca.png"
 
-const Hero = () => {
+const Hero = ({ onProdutosButtonClick }) => {
   return (
     <div className='home'>
         <section className="section">
@@ -17,7 +17,8 @@ const Hero = () => {
                     </p>
                     <div class="flex justify-center">
                         <button className="btn-home inline-flex text-white border-0 py-2 px-6 focus:outline-none rounded text-lg">Saiba Mais</button>
-                        <button className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Ver Produtos</button>
+                        <button className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg" onClick={onProdutosButtonClick}>
+                            Ver Produtos</button>
                     </div>
                 </div>
                 <div className="img-home lg:max-w-lg lg:w-full md:w-1/2 w-5/6">

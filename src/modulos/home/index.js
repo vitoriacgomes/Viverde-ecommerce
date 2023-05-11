@@ -1,12 +1,12 @@
 import React from 'react'
 import Hero from '../../componentes/hero'
 
-const Home = () => {
+const Home = ({ onProdutosButtonClick }) => {
   return (
     <div>
-      <Hero/>
+      <Hero onProdutosButtonClick={onProdutosButtonClick}/>
     </div>
   )
 }
 
-export default Home
+export default Home;
