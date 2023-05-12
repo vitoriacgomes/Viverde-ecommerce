@@ -6,27 +6,21 @@ import Produtos from './modulos/home/produtos';
 import Hero from './componentes/hero';
 
 function App() {
-  const [currentPage, setCurrent] = useState('home');
+  const [currentPage, setCurrentPage] = useState('home');
 
   function goToProdutos() {
-    setCurrent('produtos');
+    setCurrentPage('produtos');
   }
+
   function goToHome() {
-    setCurrent('home');
+    setCurrentPage('home');
   }
 
   return (
     <div>
-      <Header onProdutosButtonClick={goToProdutos}
-      onHomeButtonClick={goToHome}/>
-      {currentPage === 'home' ? (
-      <Home onProdutosButtonClick={goToProdutos}/>
-      ) : (
-        <Produtos />
-      )}
-      {currentPage === 'produtos' && (
-      <Hero onProdutosButtonClick={goToHome} />
-      )}
+      <Header onHomeButtonClick={goToHome} onProdutosButtonClick={goToProdutos} />
+      {currentPage === 'home' && <Home onProdutosButtonClick={goToProdutos} />}
+      {currentPage === 'produtos' && <Produtos />}
     </div>
   );
 }

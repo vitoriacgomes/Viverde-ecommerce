@@ -30,4 +30,4 @@ const Hero = ({ onProdutosButtonClick }) => {
   )
 }
 
-export default Hero
+export default Hero;
