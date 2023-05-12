@@ -4,6 +4,7 @@ import Header from './componentes/header';
 import Home from './modulos/home';
 import Produtos from './modulos/home/produtos';
 import Hero from './componentes/hero';
+import Footer from './componentes/Footer';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -21,6 +22,7 @@ function App() {
       <Header onHomeButtonClick={goToHome} onProdutosButtonClick={goToProdutos} />
       {currentPage === 'home' && <Home onProdutosButtonClick={goToProdutos} />}
       {currentPage === 'produtos' && <Produtos />}
+      <Footer/>
     </div>
   );
 }
