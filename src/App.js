@@ -5,6 +5,7 @@ import Home from './modulos/home';
 import Produtos from './modulos/home/produtos';
 import Hero from './componentes/hero';
 import Footer from './componentes/Footer';
+import GoogleLogin from 'react-google-login';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home');

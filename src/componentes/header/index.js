@@ -25,4 +25,4 @@ const Header = ({ onProdutosButtonClick , onHomeButtonClick}) => {
   )
 }
 
-export default Header
+export default Header;
