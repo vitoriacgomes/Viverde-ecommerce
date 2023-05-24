@@ -31,7 +31,11 @@ const Header = ({ onProdutosButtonClick , onHomeButtonClick}) => {
             </button>
         </div>
         </header>
-        {modalAberto && <Cadastro />}
+        {modalAberto && (
+          <div className="modal-overlay">
+            <Cadastro />
+          </div>
+        )}
     </div>
   )
 }
