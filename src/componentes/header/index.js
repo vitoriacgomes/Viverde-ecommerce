@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import logo from "../../img/LOGO.png"
 import Cadastro from './login';

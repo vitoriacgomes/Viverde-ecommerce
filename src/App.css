@@ -183,3 +183,33 @@ flex-direction: row;}
   margin-bottom: 10px;
 }
 /*----------------CADASTRO-------------*/
+.cadastro{
+  background-color: #088562;
+  width: 100%;
+  height: 100%;
+  color: black;
+}
+.input{
+  background-color: #088562;
+}
+.cadastro-title{
+  margin-top: 50px;
+  color: black;
+}
+.container-cadastro{
+  color: black;
+}
+.texto{
+  color: black;
+}
+.btn-3{
+  color: white;
+  background-color: #fd5e02;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+.btn-3:hover{
+  background-color: #d64f01;
+}
