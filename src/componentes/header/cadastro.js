@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from 'react'
+import titlec from "../../img/title-cadastro.png"
 
 const Cadastro = () => {
     const handleSubmit = (event) => {
@@ -7,22 +8,7 @@ const Cadastro = () => {
       const nome = document.getElementById('nome').value;
       const idade = document.getElementById('idade').value;
       const email = document.getElementById('email').value;
-      
-      // Verificação dos campos
-      if (nome === '') {
-        alert('Por favor, preencha o campo Nome.');
-        return;
-      }
-      
-      if (idade === '') {
-        alert('Por favor, preencha o campo Idade.');
-        return;
-      }
-      
-      if (email === '') {
-        alert('Por favor, preencha o campo Email.');
-        return;
-      }
+
       
       // Lógica adicional para enviar os dados do formulário para o servidor
       console.log('Dados do formulário:', { nome, idade, email });
@@ -37,11 +23,13 @@ const Cadastro = () => {
   
     return (
       <div className="cadastro">
-        <form onsubmit="handleSubmit(event)">
+        <form onsubmit={handleSubmit}>
             <section className="text-gray-600 body-font relative">
                 <div className="container-cadastro px-5 py-24 mx-auto">
                     <div className="flex flex-col text-center w-full mb-12">
-                        <h1 className="cadastro-title sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Cadastro</h1>
+                        <h1 className="title-fonte sm:text-4xl text-3xl mb-4 font-medium text-gray-900" >
+                            <img className='title-img-cadastro ' src={titlec} />
+                        </h1>
                         <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Preencha as informações a baixo, por favor.</p>
                     </div>
                     <div className="lg:w-1/2 md:w-2/3 mx-auto">
@@ -49,7 +37,7 @@ const Cadastro = () => {
 
                             <div className=" p-2 w-full">
                                 <div className="relative">
-                                    <label for="nome" className=" leading-7 text-sm text-600">Nome Completo:</label>
+                                    <label htmlFor="nome" className=" leading-7 text-sm text-600">Nome Completo:</label>
                                     <input className="input" type="text" id="nome" class="w-full bg-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required />
                                 </div>
                             </div>

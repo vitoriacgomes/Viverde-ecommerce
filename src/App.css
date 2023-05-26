@@ -213,3 +213,7 @@ flex-direction: row;}
 .btn-3:hover{
   background-color: #d64f01;
 }
+.title-img-cadastro{
+  width: 34%;
+  margin-left: 33%;
+}
