@@ -94,9 +94,9 @@ flex-direction: row;}
   position: relative;
   background-attachment: fixed;
 }
-@media (max-width: 768px){
+@media (min-width: 768px){
   .home{
-    height: 100%;
+    height: 130vh;
   }
 }
 .section{
@@ -215,5 +215,5 @@ flex-direction: row;}
 }
 .title-img-cadastro{
   width: 34%;
-  margin-left: 33%;
+  margin-left: 32%;
 }
