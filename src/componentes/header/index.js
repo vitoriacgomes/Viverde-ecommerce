@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import logo from "../../img/LOGO.png"
 
-const Header = ({ onProdutosButtonClick, onHomeButtonClick, onCadastroButtonClick }) => {
+const Header = ({ onProdutosButtonClick, onHomeButtonClick, onCadastroButtonClick, onContactButtonClick }) => {
 
   return (
     <div>
@@ -11,8 +11,8 @@ const Header = ({ onProdutosButtonClick, onHomeButtonClick, onCadastroButtonClic
           <nav className="nav md:ml-auto md:mr-auto">
             <button className="navbar mr-5 hover:text--900" onClick={onHomeButtonClick}>Home</button>
             <button className="navbar mr-5 hover:text-900" onClick={onProdutosButtonClick}>Catálogo</button>
-            <a className="navbar mr-5 hover:text-900">Carrinho</a>
-            <a className="navbar mr-5 hover:text-900">Contato</a>
+            <button className="navbar mr-5 hover:text-900">Pacotes</button>
+            <button className="navbar mr-5 hover:text-900" onClick={onContactButtonClick}>Contato</button>
           </nav>
           <button className="btn" onClick={onCadastroButtonClick}>
             Cadastre-se
