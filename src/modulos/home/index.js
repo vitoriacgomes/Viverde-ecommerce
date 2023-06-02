@@ -4,7 +4,8 @@ import Hero from '../../componentes/hero'
 const Home = ({ onProdutosButtonClick }) => {
   return (
     <div>
-      <Hero onProdutosButtonClick={onProdutosButtonClick}/>
+      <Hero onProdutosButtonClick={onProdutosButtonClick} />
+
     </div>
   )
 }

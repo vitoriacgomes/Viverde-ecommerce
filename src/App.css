@@ -226,3 +226,10 @@ flex-direction: row;}
   margin-right: 50px;
   color: black;
 }
+/*----------------SOBRE-------------*/
+.sobre{
+  background-color: #088562;
+}
+.container-sobre{
+  color: black;
+}

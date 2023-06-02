@@ -2,7 +2,7 @@ import React from 'react'
 import art1 from "../../img/vegetais-art.png"
 import logo from "../../img/logo-branca.png"
 
-const Hero = ({ onProdutosButtonClick }) => {
+const Hero = ({ onProdutosButtonClick, onSobreButtonClick }) => {
   return (
     <div className='home'>
         <section className="section">
@@ -16,7 +16,7 @@ const Hero = ({ onProdutosButtonClick }) => {
                     Igual a natureza, a família é imprescindível e imperfeita mas também colorida e cheia de emoção
                     </p>
                     <div class="flex justify-center">
-                        <button className="btn-home inline-flex text-white border-0 py-2 px-6 focus:outline-none rounded text-lg">Saiba Mais</button>
+                        {/*<button className="btn-home inline-flex text-white border-0 py-2 px-6 focus:outline-none rounded text-lg" onClick={onSobreButtonClick}>Saiba Mais</button> */}
                         <button className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg" onClick={onProdutosButtonClick}>
                             Ver Produtos</button>
                     </div>
