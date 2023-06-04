@@ -25,7 +25,10 @@ const Sobre = () => {
                             </div>
                         </div>
                         <div className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
-                            <p className="leading-relaxed text-lg mb-4">Meggings portland fingerstache lyft, post-ironic fixie man bun banh mi umami everyday carry hexagon locavore direct trade art party. Locavore small batch listicle gastropub farm-to-table lumbersexual salvia messenger bag. Coloring book flannel truffaut craft beer drinking vinegar sartorial, disrupt fashion axe normcore meh butcher. Portland 90's scenester vexillologist forage post-ironic asymmetrical, chartreuse disrupt butcher paleo intelligentsia pabst before they sold out four loko. 3 wolf moon brooklyn.</p>
+                            <p className="leading-relaxed text-lg mb-4">A história da Viverde começa com duas irmãs, Vitória, uma engenheira ambiental, e Camila, uma nutricionista. 
+                            A marca foi criada com a missão de oferecer produtos saudáveis e deliciosos, cultivados de forma ética e respeitosa ao meio ambiente.
+                            A Viverde cultiva hortaliças orgânicas e busca constantemente aprimorar seus métodos de produção, utilizando técnicas sustentáveis e inovadoras. Tem produção própria, 
+                            garantindo a riqueza e diversidade dos alimentos, e sempre priorizando a qualidade e o sabor autêntico.</p>
                         </div>
                     </div>
                 </div>
